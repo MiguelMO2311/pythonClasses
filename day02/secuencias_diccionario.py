@@ -48,3 +48,20 @@ print("Claves:", claves)
 print("Valores:", valores)
 
 
+# llaves, valores = diccionario.items() Joaquin
+
+diccionario = {"A":1,"B":2,"C":3,"D":4}
+
+#1
+numeros = list(diccionario.values())
+letras = list(diccionario.keys())
+
+#2
+for clave in diccionario:
+    letras.append(clave)
+    numeros.append(diccionario[clave])
+
+#3
+for clave,valor in diccionario.items():
+    letras.append(clave)
+    numeros.append(valor)
