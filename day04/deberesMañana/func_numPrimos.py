@@ -11,6 +11,6 @@ lista_primos = guardar_primos(limite)
 print("Números primos hasta", limite, ":", lista_primos)
 
 
-# La función guardar_primos recorre los números desde 2 hasta el límite especificado.
-# Utiliza una comprensión de lista con all para verificar si el número es primo.
-# Si el número es primo, se añade a la lista de primos.
+# La funcion guardar_primos recorre los numeros desde 2 hasta el limite especificado.
+# Utiliza una comprension de lista con "all" para verificar si el numero es primo.
+# Si el numero es primo, se añade a la lista de primos.

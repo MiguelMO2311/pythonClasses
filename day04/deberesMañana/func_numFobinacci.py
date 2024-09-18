@@ -10,7 +10,7 @@ lista_fibonacci = generar_fibonacci(cantidad)
 print("Números de Fibonacci:", lista_fibonacci)
 
 
-# La función generar_fibonacci toma un número n como argumento, que representa la cantidad de números de Fibonacci que deseas generar.
-# Inicializa una lista fibonacci con los dos primeros números de la secuencia: 0 y 1.
-# Utiliza un bucle for para generar los siguientes números de la secuencia sumando los dos últimos números de la lista.
-# Devuelve la lista de números de Fibonacci hasta la cantidad especificada.
+# La funcion generar_fibonacci toma un numero "n" como argumento, que representa la cantidad de numeros de Fibonacci que deseas generar.
+# Inicializa una lista fibonacci con los dos primeros numeros de la secuencia: 0 y 1.
+# Utiliza un bucle for para generar los siguientes numeros de la secuencia sumando los dos ultimos numeros de la lista.
+# Devuelve la lista de numeros de Fibonacci hasta la cantidad especificada.

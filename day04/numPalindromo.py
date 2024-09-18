@@ -9,11 +9,11 @@ print(f"El número {numero} es palíndromo: {resultado}")
 # opcion para que si es un numero palidromo me sume sus numeros
 
 def es_palindromo_y_suma(numero):
-    # Convertir el número a una cadena
+    # Convertir el numero a una cadena
     cadena = str(numero)
-    # Verificar si es palíndromo
+    # Verificar si es palindromo
     if cadena == cadena[::-1]:
-        # Calcular la suma de los dígitos
+        # Calcular la suma de los digitos
         suma = sum(int(digito) for digito in cadena)
         return f"El número {numero} es palíndromo y la suma de sus dígitos es {suma}."
     else:
@@ -21,9 +21,9 @@ def es_palindromo_y_suma(numero):
 
 # Ejemplo de uso
 def es_palindromo_y_suma(numero):
-    # Convertir el número a una cadena
+    # Convertir el numero a una cadena
     cadena = str(numero)
-    # Verificar si es palíndromo
+    # Verificar si es palindromo
     if cadena == cadena[::-1]:
         # Calcular la suma de los dígitos
         suma = sum(int(digito) for digito in cadena)
