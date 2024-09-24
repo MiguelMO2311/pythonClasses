@@ -29,8 +29,9 @@ print(arn)
 
 
 # Hecho con lambda
-trad = lambda base_nitrogenada: traduccion[base_nitrogenada]
+''' trad = lambda base_nitrogenada: traduccion[base_nitrogenada]
 resultado = ""
 for par in hebra:
     resultado += trad(par)
 print(resultado)
+'''
