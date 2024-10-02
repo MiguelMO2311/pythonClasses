@@ -2,6 +2,13 @@ from abc import ABC, abstractmethod
 from dataclasses import dataclass, field
 from typing import List
 
+# Decorador para dar la bienvenida
+def bienvenida_decorador(func):
+    def wrapper(*args, **kwargs):
+        print("Bienvenidos a la tienda online de Ropa Deportiva")
+        return func(*args, **kwargs)
+    return wrapper
+
 @dataclass
 class Producto(ABC):
     codigo: int
@@ -68,14 +75,18 @@ def imprimir_inventario(productos: List[Producto]):
 
 # Lista de productos
 productos = [
-    Camiseta(codigo=100, ref="camiRMHom", nombre="Camiseta Real Madrid", marca="Adidas", tipo="Futbol", talla="L", color="Naranja"),
-    Camiseta(codigo=101, ref="camiBarcMujer", nombre="Camiseta Barcelona", marca="Adidas", tipo="Futbol", talla="L", color="Azulgrana"),
-    Pantalon(codigo=200, ref="pantaRMMujer", nombre="Pantalon Basket Real Madrid", marca="Adidas", tipo="Basket", talla="M", color="Blanco")
+    Camiseta(codigo=100, ref="camiRMHom", nombre="Camiseta Real Madrid 24/25", marca="Adidas", tipo="Futbol", talla="L", color="Naranja"),
+    Pantalon(codigo=200, ref="pantaRMMujer", nombre="Pantalon Basket Real Madrid 24/25", marca="Adidas", tipo="Basket", talla="M", color="Blanco")
 ]
 
+# Mostrar mensaje de bienvenida antes de la interacción con el usuario
+@bienvenida_decorador
+def iniciar_busqueda():
+    nombre_producto = input("Introduce el nombre del producto que deseas buscar: ")
+    return buscar_producto_por_nombre(nombre_producto, productos)
+
 # Interacción con el usuario
-nombre_producto = input("Introduce el nombre del producto que deseas buscar: ")
-producto_encontrado = buscar_producto_por_nombre(nombre_producto, productos)
+producto_encontrado = iniciar_busqueda()
 
 if producto_encontrado:
     print(f"Producto encontrado: {producto_encontrado.mostrar_informacion()}")
