@@ -75,8 +75,8 @@ def imprimir_inventario(productos: List[Producto]):
 
 # Lista de productos
 productos = [
-    Camiseta(codigo=100, ref="camiRMHom", nombre="Camiseta Real Madrid 24/25", marca="Adidas", tipo="Futbol", talla="L", color="Naranja"),
-    Pantalon(codigo=200, ref="pantaRMMujer", nombre="Pantalon Basket Real Madrid 24/25", marca="Adidas", tipo="Basket", talla="M", color="Blanco")
+    Camiseta(codigo=100, ref="camiRMHom", nombre="Camiseta Real Madrid", marca="Adidas", tipo="Futbol", talla="L", color="Naranja"),
+    Pantalon(codigo=200, ref="pantaRMMujer", nombre="Pantalon Basket Real Madrid", marca="Adidas", tipo="Basket", talla="M", color="Blanco")
 ]
 
 # Mostrar mensaje de bienvenida antes de la interacción con el usuario
